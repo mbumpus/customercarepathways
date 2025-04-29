@@ -24,7 +24,7 @@
       padding: 1rem;
     }
     .container {
-      max-width: 600px;
+      max-width: 700px;
     }
     h1 {
       font-size: 2rem;
@@ -33,29 +33,48 @@
     p {
       margin: 0.75rem 0;
     }
-    input, button {
+    form {
+      margin: 1.5rem 0;
+    }
+    input[type="email"] {
       padding: 0.5em;
-      margin-top: 0.5em;
       font-size: 1rem;
+      width: 80%;
+      max-width: 300px;
+      margin-bottom: 0.5em;
+    }
+    button {
+      padding: 0.5em 1em;
+      font-size: 1rem;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #555;
+    }
+    .footer {
+      font-size: 0.9rem;
+      margin-top: 1.5rem;
     }
   </style>
 </head>
-<p><em>Want to be the first to see what's next?</em></p>
-<form action="https://formspree.io/f/xgvkolap" method="POST">
-  <input type="hidden" name="_redirect" value="https://customercarepathways.com/thank-you.html">
-  <input type="email" name="email" placeholder="you@example.com" required>
-  <br>
-  <button type="submit">Notify Me</button>
-</form>
-
-
-
 <body>
   <div class="container">
     <h1>🚧 Customer Care Pathways</h1>
+    <form action="https://formspree.io/f/xgvkolap" method="POST">
+      <p><em>Want to be the first to see what's next?</em></p>
+      <input type="hidden" name="_redirect" value="https://customercarepathways.com/thank-you.html">
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <br>
+      <button type="submit">Notify Me</button>
+    </form>
     <p><strong>Continuity of Customer Care™</strong> is a core principle of the <em>Customer Care Pathways</em> framework — a strategic approach to designing seamless, end-to-end customer experience systems.</p>
-    <p>(c) 2025, AI Cabinet Method LLC. All rights reserved.</p>
-    <p>📬 For inquiries, contact <a href="mailto:mike.bumpus@outlook.com">mike.bumpus@outlook.com</a>.</p>
+    <div class="footer">
+      <p>(c) 2025, AI Cabinet Method LLC. All rights reserved.</p>
+      <p>📬 For inquiries, contact <a href="mailto:mike.bumpus@outlook.com">mike.bumpus@outlook.com</a>.</p>
+    </div>
   </div>
 </body>
 </html>
